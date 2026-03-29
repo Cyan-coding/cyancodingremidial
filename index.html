@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Website</title>
+
+<!-- Link to external CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<header>
+<h1>My Personal Website</h1>
+<nav>
+<a onclick="showPage('about')">About Me</a>
+<a onclick="showPage('hobbies')">Hobbies</a>
+</nav>
+</header>
+
+<!-- ABOUT PAGE -->
+
+<section id="about" class="content page active">
+ <h2>About Me</h2>
+ <center>
+ <img src="atinenpicture.jpg" width="200" height="200">"
+
+ </center>
+ <div style="border:2px solid #0000ff; background-color:#e0e0ff; padding:20px; border-radius:10px;">
+ <p>Hello! My name is Cyan Dieren Q. Atinen. I am 16 years old and I am in Grade 11. I am a friendly and hardworking person. I like to learn new things and try different activities. I want to improve myself every day and become a better person.
+I have many dreams for the future. My biggest dream is to have my own business someday. I want to be independent and successful. I know that reaching my dreams will take hard work, patience, and learning new skills. I am willing to work hard to make my dreams come true.
+I believe it is very important to balance school, hobbies, and fun. I try to spend my time studying, practicing my hobbies, and being with my family and friends. I think family and friends are very important because they support me, encourage me, and make me happy.
+I also like meeting new people and making new friends. I enjoy talking to others and learning from them. I believe that learning from different people and experiences can help me grow. I want to be a kind and helpful person who always tries to do my best.</p>
+ </div>
+</section>
+
+
+<!-- HOBBIES PAGE -->
+<section id="hobbies" class="content page">
+ <h2>My Hobbies</h2>
+
+ <div class="hobby">
+ <img src="https://rockymountevents.com/wp-content/uploads/2019/06/High-school-student-dribbling-past-a-defender.jpg">
+ <div style="border:2px solid #0000ff; background-color:#e0e0ff; padding:20px; border-radius:10px;">
+ <p>Playing Basketball
+One of my favorite hobbies is playing basketball. I love it because it keeps me healthy and strong. Basketball also teaches me important lessons like teamwork, patience, and discipline. I enjoy practicing my shots, dribbling, passing, and learning new skills. Playing games with my friends is fun and exciting. Basketball helps me stay active, focused, and confident. Watching basketball games also inspires me to learn more and improve my skills.</p>
+ </div>
+ </div>
+
+ <div class="hobby">
+ <img src="539a3dd0-6d3f-43bc-804b-36d7596aedff.jpg">
+ <div style="border:2px solid #0000ff; background-color:#e0e0ff; padding:20px; border-radius:10px;">
+ <p>Playing Basketball
+One of my favorite hobbies is playing basketball. I love it because it keeps me healthy and strong. Basketball also teaches me important lessons like teamwork, patience, and discipline. I enjoy practicing my shots, dribbling, passing, and learning new skills. Playing games with my friends is fun and exciting. Basketball helps me stay active, focused, and confident. Watching basketball games also inspires me to learn more and improve my skills.</p>
+<p>
+Besides basketball and online games, I enjoy learning new skills and trying different activities. I like reading, watching interesting videos, and exploring new topics. Spending time with my family and friends is very important to me because they make me happy and give me support. My hobbies help me stay busy, happy, and motivated. They also teach me responsibility, focus, and patience.</p>
+ </div>
+ </div>
+
+
+</section>
+
+<!-- JavaScript (internal, unchanged) -->
+<script>
+function showMessage() {
+ alert("Hello! Thanks for visiting my website 😊");
+}
+
+function showPage(pageId) {
+ let pages = document.querySelectorAll('.page');
+ pages.forEach(page => page.classList.remove('active'));
+
+ document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
